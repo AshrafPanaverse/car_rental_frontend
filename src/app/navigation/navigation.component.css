@@ -1,0 +1,41 @@
+/* navigation.component.css */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .logo img {
+    width: 44.43px;
+    height: 52.39;
+  }
+  .logo{
+    text-decoration:none;
+  }
+  .logo h1{
+    color: #170b3b;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .ui-menu {
+    width: 100%;
+  }
+  .menu ul li {
+    margin: 20px !important;
+}
+  @media (max-width: 768px) {
+    .menu {
+      justify-content: center;
+    }
+  }
+  

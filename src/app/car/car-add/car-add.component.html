@@ -1,0 +1,141 @@
+<div class="container mt-4">
+    <h2>Car Rental Form</h2>
+    <form>
+        <!-- Price -->
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="text" class="form-control" id="price" placeholder="Price for different durations">
+        </div>
+
+        <!-- Availability -->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="availability">
+            <label class="form-check-label" for="availability">Available</label>
+        </div>
+
+        <!-- Calendar -->
+        <div class="form-group">
+            <label for="calendar">Calendar:</label>
+            <input type="text" class="form-control" id="calendar" placeholder="Select a date">
+        </div>
+
+        <!-- Types of Car -->
+        <div class="form-group">
+            <label for="carType">Car Type:</label>
+            <select class="form-control" id="carType">
+                <option>4x4</option>
+                <option>SUV</option>
+                <option>Sport Car</option>
+                <!-- Add more options here -->
+            </select>
+        </div>
+
+        <!-- Make -->
+        <div class="form-group">
+            <label for="make">Make:</label>
+            <input type="text" class="form-control" id="make" placeholder="Car Make">
+        </div>
+
+        <!-- Model -->
+        <div class="form-group">
+            <label for="model">Model:</label>
+            <input type="text" class="form-control" id="model" placeholder="Car Model">
+        </div>
+
+        <!-- Premium Ad Idea -->
+        <div class="form-group">
+            <label for="premiumAd">Premium Ad Idea:</label>
+            <input type="text" class="form-control" id="premiumAd" placeholder="Car Company Name">
+        </div>
+
+        <!-- Production Year -->
+        <div class="form-group">
+            <label for="productionYear">Production Year:</label>
+            <input type="text" class="form-control" id="productionYear" placeholder="Production Year">
+        </div>
+
+        <!-- Description -->
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" rows="4" placeholder="Car Description"></textarea>
+        </div>
+
+        <!-- Multiple Images Upload -->
+        <div class="form-group mt-4 mb-2">
+            <label for="images">Upload Images:</label>
+            <input type="file" class="form-control-file" id="images" multiple>
+        </div>
+
+        <!-- Other Details -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Seats -->
+                <div class="form-group">
+                    <label for="seats">Seats:</label>
+                    <input type="number" class="form-control" id="seats">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Doors -->
+                <div class="form-group">
+                    <label for="doors">Doors:</label>
+                    <input type="number" class="form-control" id="doors">
+                </div>
+            </div>
+        </div>
+
+        <!-- Engine Details -->
+        <div class="form-group">
+            <label for="engineSize">Engine Size:</label>
+            <input type="text" class="form-control" id="engineSize" placeholder="Engine Size (e.g., 2.0 L)">
+        </div>
+
+        <div class="form-group">
+            <label for="horsepower">Horsepower:</label>
+            <input type="text" class="form-control" id="horsepower" placeholder="Horsepower">
+        </div>
+
+        <!-- Drive Train -->
+        <div class="form-group">
+            <label for="driveTrain">Drive Train:</label>
+            <select class="form-control" id="driveTrain">
+                <option>4x4</option>
+                <option>Front Wheel</option>
+                <option>Rear Wheel</option>
+            </select>
+        </div>
+
+        <!-- Gearbox -->
+        <div class="form-group">
+            <label for="gearbox">Gearbox:</label>
+            <select class="form-control" id="gearbox">
+                <option>Automatic</option>
+                <option>Manual</option>
+            </select>
+        </div>
+
+        <!-- Gas Type -->
+        <div class="form-group">
+            <label for="gasType">Gas Type:</label>
+            <select class="form-control" id="gasType">
+                <option>Diesel</option>
+                <option>Petrol</option>
+                <option>Petrol with LPG</option>
+            </select>
+        </div>
+
+        <!-- Wedding Checkbox -->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="wedding">
+            <label class="form-check-label" for="wedding">Available for Weddings</label>
+        </div>
+
+        <!-- Icon for Wedding Reference -->
+        <div class="float-right">
+            <span class="badge badge-warning">W</span>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
