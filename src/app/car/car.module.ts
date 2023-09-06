@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarAddComponent } from './car-add/car-add.component';
 
+import { ReactiveFormsModule } from '@angular/forms'; // Import ReactiveFormsModule
 
 
 @NgModule({
@@ -9,7 +10,7 @@ import { CarAddComponent } from './car-add/car-add.component';
     CarAddComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,ReactiveFormsModule
   ]
 })
 export class CarModule { }

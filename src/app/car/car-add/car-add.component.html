@@ -1,28 +1,28 @@
 <div class="container mt-4">
     <h2>Car Rental Form</h2>
-    <form>
+    <form [formGroup]="carForm" (ngSubmit)="onSubmit()">
         <!-- Price -->
         <div class="form-group">
             <label for="price">Price:</label>
-            <input type="text" class="form-control" id="price" placeholder="Price for different durations">
+            <input type="text" class="form-control" id="price" placeholder="Price for different durations" formControlName="price">
         </div>
 
         <!-- Availability -->
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="availability">
+            <input type="checkbox" class="form-check-input" id="availability" formControlName="availability">
             <label class="form-check-label" for="availability">Available</label>
         </div>
 
         <!-- Calendar -->
         <div class="form-group">
             <label for="calendar">Calendar:</label>
-            <input type="text" class="form-control" id="calendar" placeholder="Select a date">
+            <input type="text" class="form-control" id="calendar" placeholder="Select a date" formControlName="calendar">
         </div>
 
         <!-- Types of Car -->
         <div class="form-group">
             <label for="carType">Car Type:</label>
-            <select class="form-control" id="carType">
+            <select class="form-control" id="carType" formControlName="carType">
                 <option>4x4</option>
                 <option>SUV</option>
                 <option>Sport Car</option>
@@ -33,37 +33,37 @@
         <!-- Make -->
         <div class="form-group">
             <label for="make">Make:</label>
-            <input type="text" class="form-control" id="make" placeholder="Car Make">
+            <input type="text" class="form-control" id="make" placeholder="Car Make" formControlName="make">
         </div>
 
         <!-- Model -->
         <div class="form-group">
             <label for="model">Model:</label>
-            <input type="text" class="form-control" id="model" placeholder="Car Model">
+            <input type="text" class="form-control" id="model" placeholder="Car Model" formControlName="model">
         </div>
 
         <!-- Premium Ad Idea -->
         <div class="form-group">
             <label for="premiumAd">Premium Ad Idea:</label>
-            <input type="text" class="form-control" id="premiumAd" placeholder="Car Company Name">
+            <input type="text" class="form-control" id="premiumAd" placeholder="Car Company Name" formControlName="premiumAd">
         </div>
 
         <!-- Production Year -->
         <div class="form-group">
             <label for="productionYear">Production Year:</label>
-            <input type="text" class="form-control" id="productionYear" placeholder="Production Year">
+            <input type="text" class="form-control" id="productionYear" placeholder="Production Year" formControlName="productionYear">
         </div>
 
         <!-- Description -->
         <div class="form-group">
             <label for="description">Description:</label>
-            <textarea class="form-control" id="description" rows="4" placeholder="Car Description"></textarea>
+            <textarea class="form-control" id="description" rows="4" placeholder="Car Description" formControlName="description"></textarea>
         </div>
 
         <!-- Multiple Images Upload -->
         <div class="form-group mt-4 mb-2">
             <label for="images">Upload Images:</label>
-            <input type="file" class="form-control-file" id="images" multiple>
+            <input type="file" class="form-control-file" id="images" formControlName="images" multiple>
         </div>
 
         <!-- Other Details -->
@@ -72,14 +72,14 @@
                 <!-- Seats -->
                 <div class="form-group">
                     <label for="seats">Seats:</label>
-                    <input type="number" class="form-control" id="seats">
+                    <input type="number" class="form-control" id="seats" formControlName="seats">
                 </div>
             </div>
             <div class="col-md-6">
                 <!-- Doors -->
                 <div class="form-group">
                     <label for="doors">Doors:</label>
-                    <input type="number" class="form-control" id="doors">
+                    <input type="number" class="form-control" id="doors" formControlName="doors">
                 </div>
             </div>
         </div>
@@ -87,18 +87,18 @@
         <!-- Engine Details -->
         <div class="form-group">
             <label for="engineSize">Engine Size:</label>
-            <input type="text" class="form-control" id="engineSize" placeholder="Engine Size (e.g., 2.0 L)">
+            <input type="text" class="form-control" id="engineSize" placeholder="Engine Size (e.g., 2.0 L)" formControlName="engineSize">
         </div>
 
         <div class="form-group">
             <label for="horsepower">Horsepower:</label>
-            <input type="text" class="form-control" id="horsepower" placeholder="Horsepower">
+            <input type="text" class="form-control" id="horsepower" placeholder="Horsepower" formControlName="horsepower">
         </div>
 
         <!-- Drive Train -->
         <div class="form-group">
             <label for="driveTrain">Drive Train:</label>
-            <select class="form-control" id="driveTrain">
+            <select class="form-control" id="driveTrain" formControlName="driveTrain">
                 <option>4x4</option>
                 <option>Front Wheel</option>
                 <option>Rear Wheel</option>
@@ -108,7 +108,7 @@
         <!-- Gearbox -->
         <div class="form-group">
             <label for="gearbox">Gearbox:</label>
-            <select class="form-control" id="gearbox">
+            <select class="form-control" id="gearbox" formControlName="gearbox">
                 <option>Automatic</option>
                 <option>Manual</option>
             </select>
@@ -117,7 +117,7 @@
         <!-- Gas Type -->
         <div class="form-group">
             <label for="gasType">Gas Type:</label>
-            <select class="form-control" id="gasType">
+            <select class="form-control" id="gasType" formControlName="gasType">
                 <option>Diesel</option>
                 <option>Petrol</option>
                 <option>Petrol with LPG</option>
@@ -126,7 +126,7 @@
 
         <!-- Wedding Checkbox -->
         <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="wedding">
+            <input type="checkbox" class="form-check-input" id="wedding" formControlName="wedding">
             <label class="form-check-label" for="wedding">Available for Weddings</label>
         </div>
 
