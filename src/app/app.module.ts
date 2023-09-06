@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 
 import { CarModule } from './car/car.module';
 import { HomePageComponent } from './home-page/home-page.component';
-import { NavigationComponent } from './navigation/navigation.component'; // Import the CarModule
+import { NavigationComponent } from './navigation/navigation.component';
+import { FooterComponent } from './footer/footer.component'; // Import the CarModule
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
