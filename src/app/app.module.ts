@@ -10,7 +10,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { LoginComponent } from './login/login.component'; // Import the CarModule
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component'; // Import the CarModule
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginComponent } from './login/login.component'; // Import the CarModul
     NavigationComponent,
     FooterComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

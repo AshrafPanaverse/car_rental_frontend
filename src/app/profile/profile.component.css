@@ -1,0 +1,54 @@
+.card{
+    padding: 5% 0px;
+}
+.card-img-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .card-img-top {
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    max-height: 100%; /* Ensure the image does not exceed the container's height */
+    width: auto;
+    height: auto;
+  }
+.card-body{
+    text-align: center;
+}  
+.card-body nav{
+    text-align: left;
+}
+.card-body nav a{
+    color: gray;
+}
+.card-body nav img{
+    margin-right: 10px;
+}
+.form-group{
+    padding: 0 1%;
+    margin: 1% 0;  
+}
+
+.form-check .form-check-input {
+    float: left;
+    margin-left:0%;
+    margin-right: 2%;
+}
+button{
+    display: block;
+    margin: 3% 0;
+    width: 100%;
+    box-shadow: 1px 1px 3px #aaaaaa;
+}
+button.btn-primary, a.active{
+    background-color: #002D62;
+    color: white !important;
+    border-radius: 5px;
+}
+.card-title{
+    color:#002D62;
+}
+button:hover{
+    opacity: 0.8;
+}

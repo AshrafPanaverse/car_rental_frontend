@@ -1,3 +1,20 @@
 .form-group{
     margin-bottom: 2%;
 }
+.card-body{
+    text-align: center;
+}  
+.card-body nav{
+    text-align: left;
+}
+.card-body nav a{
+    color: gray;
+}
+.card-body nav img{
+    margin-right: 10px;
+}
+button.btn-primary, a.active{
+    background-color: #002D62;
+    color: white !important;
+    border-radius: 5px;
+}

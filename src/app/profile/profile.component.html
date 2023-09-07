@@ -1,0 +1,77 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-img-container">
+                  <img src="../../assets/user.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Michael Smith</h5>
+                  <p class="card-text underline">michaelsmith@domain.com</p>
+                  <hr/>
+                  <nav class="nav flex-column">
+                    <a class="nav-link active" aria-current="page" href="/profile">
+                        <img src="../../assets/icons/person.png"/> Profile
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="../../assets/icons/list.png"/> Dodaj Nowy Pojazd
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="../../assets/icons/vehicle.png"/> Zarzadzaj Pojazdami
+                    </a>
+                    <hr/>
+                    <a class="nav-link" aria-disabled="true" href="/">
+                        <img src="../../assets/icons/logout.png"/> Logout
+                    </a>
+                  </nav>
+                </div>
+              </div>
+              
+
+        </div>
+        <div class="col-md-9">
+            <h2>Main Info</h2>
+            <form #signupForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                        placeholder="michaelsmith@domain.com" required [(ngModel)]="user.email" />
+                </div>
+                <div class="form-group">
+                    <label for="company">Nazwan Firmy:</label>
+                    <input type="tel" class="form-control" id="company" name="company"
+                        placeholder="" required [(ngModel)]="user.company" />
+                </div>
+                <div class="form-group address">
+                    <label for="address">O Nas:</label>
+                    <textarea class="form-control" id="address" name="address" placeholder="5th avenue" required
+                        [(ngModel)]="user.address"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Number Telefonu:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber"
+                        placeholder="" required [(ngModel)]="user.phoneNumber" />
+                </div>
+                <div class="form-group">
+                    <label for="Wojewodztwo">Wojewodztwo:</label>
+                    <input type="text" class="form-control" id="Wojewodztwo" name="Wojewodztwo" required
+                        [(ngModel)]="user.Wojewodztwo" />
+                </div>
+                <div class="form-group">
+                    <label for="city">Miasto:</label>
+                    <input type="text" class="form-control" id="city" name="city" required
+                        [(ngModel)]="user.city" />
+                </div>
+                <div class="form-group">
+                    <label for="address">Adres:</label>
+                    <input type="text" class="form-control" id="address" name="address" required
+                        [(ngModel)]="user.address" />
+                </div>
+               
+                <button type="submit" class="btn btn-primary">
+                    <img src="../../assets/icons/save.png"/>  Aktualizuj
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
