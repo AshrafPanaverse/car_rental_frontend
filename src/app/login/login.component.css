@@ -1,0 +1,21 @@
+.container{
+    max-width: 100%;
+    padding: 5%;
+    background-image: url("../../assets/Group.png");
+    background-size: 100% 100%;
+}
+form{
+    width: 40%;
+}
+button{
+    display: block;
+    margin: 3% 0;
+    width: 100%;
+    box-shadow: 1px 1px 3px #aaaaaa;
+}
+button.btn-primary{
+    background-color: #002D62;
+}
+button:hover{
+    opacity: 0.8;
+}
