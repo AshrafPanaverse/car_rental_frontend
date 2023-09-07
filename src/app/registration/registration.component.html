@@ -1,1 +1,99 @@
-<p>registration works!</p>
+<div class="container">
+    <h2>Sign Up</h2>
+    <form #signupForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          name="firstName"
+          placeholder="Michael"
+          required
+          [(ngModel)]="user.firstName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          name="lastName"
+          placeholder="Smith"
+          required
+          [(ngModel)]="user.lastName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="michaelsmith@domain.com"
+          required
+          [(ngModel)]="user.email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="+72 390 729 22"
+          required
+          [(ngModel)]="user.phoneNumber"
+        />
+      </div>
+      <div class="form-group address">
+        <label for="address">Address:</label>
+        <textarea
+          class="form-control"
+          id="address"
+          name="address"
+          placeholder="Lubskie"
+          required
+          [(ngModel)]="user.address"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="companyName"
+          name="companyName"
+          required
+          [(ngModel)]="user.companyName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="vatNumber">VAT Number:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="vatNumber"
+          name="vatNumber"
+          required
+          [(ngModel)]="user.vatNumber"
+        />
+      </div>
+      <div class="form-group form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="agreeCheckbox"
+          name="agreeCheckbox"
+          required
+          [(ngModel)]="user.agree"
+        />
+        <label class="form-check-label" for="agreeCheckbox">I agree to the terms and conditions</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Create an Account</button>
+    </form>
+  </div>
+  
