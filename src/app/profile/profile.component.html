@@ -30,7 +30,20 @@
 
         </div>
         <div class="col-md-9">
-            <h2>Main Info</h2>
+            <h4>Firmowe Logo</h4>
+            <div style="    margin: 5% 0;">
+               
+                <input type="file" id="upload" hidden (change)="onFileSelected($event)" accept="image/*">
+                <label class="fileUpload" for="upload">
+                    <img src="../../assets/icons/upload.png"/>Choose file
+                </label>
+                <div *ngIf="selectedImage" class="image-preview">
+                    <img [src]="selectedImage" alt="Selected Image">
+                  </div>  
+            </div>
+              
+              
+            <h4>Main Info</h4>
             <form #signupForm="ngForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <label for="email">Email:</label>
