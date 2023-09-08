@@ -6,7 +6,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { CarSearchComponent } from './car/car-search/car-search.component';
 const routes: Routes = [
   // Define your other routes here
   { path: '', component: HomePageComponent },
@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'register', component: RegistrationComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'car-add', component: CarAddComponent },
+  { path: 'car-search', component: CarSearchComponent },
   // Add more routes as needed
 ];
 

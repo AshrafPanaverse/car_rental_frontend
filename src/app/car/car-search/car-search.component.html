@@ -1,0 +1,121 @@
+<!-- car-search.component.html -->
+<div class="container">
+    <h4>Filter</h4>
+   
+    <div class="row">
+    <form #filterForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <label for="address">Adres:</label>
+                    <input type="text" class="form-control" id="address" name="address"
+                        placeholder="Wapszie eak ejhe kek" required [(ngModel)]="carFilter.address" />
+                </div>
+    
+                <div class="col-sm">
+                    <label for="radius">Radius:</label>
+                    <input type="text" class="form-control" id="radius" name="radius" placeholder="Suzkjd vl ewhej"
+                        required [(ngModel)]="carFilter.radius" />
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm">
+                    <label for="type">Typ:</label>
+                    <input type="text" class="form-control" id="type" name="type" placeholder="wapis eh she  vhe"
+                        required [(ngModel)]="carFilter.type" />
+                </div>
+                <div class="col-sm">
+                    <label for="marka">Marka:</label>
+                    <input type="text" class="form-control" id="marka" name="marka" placeholder="Marka"
+                        required [(ngModel)]="carFilter.marka" />
+                </div>
+                <div class="col-sm">
+                    <label for="model">Model:</label>
+                    <input type="text" class="form-control" id="model" name="model" placeholder="Model" required
+                        [(ngModel)]="carFilter.model" />
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm">
+                    <label for="naped">Naped:</label>
+                    <input type="text" class="form-control" id="naped" name="naped" required
+                        [(ngModel)]="carFilter.naped" />
+    
+                    <label for="rodzajPaliwa">Rodzaj Paliwa:</label>
+                    <input type="text" class="form-control" id="rodzajPaliwa" name="rodzajPaliwa" required
+                        [(ngModel)]="carFilter.rodzajPaliwa" />
+    
+                    <label for="skyrzyniaBiegow">Skrzynia Biegow:</label>
+                    <input type="text" class="form-control" id="skyrzyniaBiegow" name="skyrzyniaBiegow" required
+                        [(ngModel)]="carFilter.skyrzyniaBiegow" />
+                </div>
+                <div class="col-sm">
+                    <label for="inneInformation">Inne Informacje:</label>
+                    <div class="input-group-text">
+                        <input type="checkbox" [(ngModel)]="carFilter.inneInformation"
+                            aria-label="Minimalny wiek 21 +" />
+                        Minimalny wiek 21 +
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Filter Cars</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <hr />
+    
+    <h4>Applied Filters | <button style="font-size: 16px; color: red; border: none; background: none;">Celar
+            All</button></h4>
+    <div class="applied-filters">
+        <div class="filter-pills">
+            <div><span class="badge badge-light badge-label">Car Type</span></div>
+            <button type="button" class="btn btn-primary pill-item">
+                Sport <span class="badge badge-light">X</span>
+            </button>
+        </div>
+
+        <div class="filter-pills">
+            <div><span class="badge badge-light badge-label">Car Brand</span></div>
+            <button type="button" class="btn btn-primary pill-item">
+                Ferari <span class="badge badge-light">X</span>
+            </button>
+        </div>
+
+        <div class="filter-pills">
+            <div><span class="badge badge-light badge-label">Car Model(s)</span></div>
+            <button type="button" class="btn btn-primary pill-item">
+                F8 Tributo <span class="badge badge-light">X</span>
+            </button>
+            <button type="button" class="btn btn-primary pill-item">
+                458 <span class="badge badge-light">X</span>
+            </button>
+            <button type="button" class="btn btn-primary pill-item">
+                575M Maranello <span class="badge badge-light">X</span>
+            </button>
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row cars-list">
+        <div class="col-md-4" *ngFor="let car of cars">
+            <div class="card">
+                <img class="card-img-top" src="../../../assets/car-thumb.png" alt="{{ car.make }} {{ car.model }}">
+                <div class="card-body">
+                    <p class="card-text blur">{{ car.model }} | {{ car.year }}</p>
+                    <h5 class="card-title">{{ car.make }} {{ car.model }}</h5>
+                    <p class="card-text">Year: {{ car.year }}</p>
+                    <p class="card-text"><strong>${{ car.price }}</strong> / Day</p>
+                    <button class="btn btn-primary">Rent Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
