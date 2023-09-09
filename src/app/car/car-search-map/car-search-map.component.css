@@ -1,0 +1,53 @@
+input[type="checkbox"] {
+    margin: 1%;
+    width: 15px;
+    height: 15px;
+    border: 5px solid gray;
+}
+.input-group-text{
+    border: none;
+}
+input{
+    margin-bottom: 20px;
+}
+.badge{
+    color: rgb(27, 77, 202);
+    background-color: white;
+    border-radius: 50%;
+}
+.badge-label{
+    color: gray;
+    font-size:22px;
+    font-weight: lighter;
+    padding-left: 0px;
+}
+
+.filter-pills {
+    width: fit-content;
+    border-right: 1px solid gray;
+    padding: 0 2%;
+    display: inline-block;
+}
+.filter-pills:last-child{
+    border: none;
+}
+.pill-item{
+    margin: 2px;
+    margin-left: 5px;
+}
+
+
+.cars-list .card-body button{
+    width: 100%;
+    background-color: darkblue;
+}
+
+.cars-list  .card-title{
+    font-size: 28px;
+    color:darkblue;
+    font-weight: bold;
+}
+
+.cars-list .card {
+    margin-bottom: 5%;
+}
