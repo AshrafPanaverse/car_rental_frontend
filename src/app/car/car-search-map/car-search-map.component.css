@@ -51,3 +51,10 @@ input{
 .cars-list .card {
     margin-bottom: 5%;
 }
+.row.map{
+    margin: 5% 0px;
+}
+.map-container {
+    width: 100% !important;
+    height: 100% !important;
+ }

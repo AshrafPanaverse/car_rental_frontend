@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component'; // Import the CarModule
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProfileComponent } from './profile/profile.component'; // Import the Ca
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    CarModule
+    CarModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
